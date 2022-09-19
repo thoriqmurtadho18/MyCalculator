@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tvCalculator"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="MY CALCULATOR"
+            android:gravity="center"
+            android:textSize="38sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_marginTop="38dp"/>
+
+        <TextView
+            android:id="@+id/tvNilaia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NILAI A"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvCalculator"
+            android:layout_marginTop="38dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tvNilaib"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NILAI B"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@+id/tvNilaia"
+            android:layout_marginTop="38dp"
+            android:layout_marginLeft="10dp"/>
+
+        <EditText
+            android:id="@+id/etNilaia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCalculator"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="20dp"
+            android:text="Silahkan Masukkan Nilai A"
+            android:layout_toEndOf="@+id/tvNilaia"
+            android:inputType="number"/>
+
+        <EditText
+            android:id="@+id/etNilaib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNilaia"
+            android:layout_marginTop="28dp"
+            android:layout_marginRight="20dp"
+            android:text="Silahkan Masukkan Nilai B"
+            android:layout_toEndOf="@+id/tvNilaia"
+            android:inputType="number"/>
+
+        <RadioGroup
+            android:id="@+id/rgOperasi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvNilaib"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/rbTambah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TAMBAH"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbKurang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KURANG"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbKali"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KALI"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/rbBagi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="BAGI"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+            <Button
+                android:id="@+id/btn_hitung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HITUNG"
+                android:textSize="25sp"
+                android:layout_below="@id/rgOperasi"
+                android:layout_marginTop="20dp"
+                android:layout_margin="10dp"/>
+            
+            <TextView
+                android:id="@+id/tvHasil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HASIL :"
+                android:textSize="25sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_below="@id/btn_hitung"
+                android:layout_margin="10dp"/>
+        <TextView
+            android:id="@+id/tvHsl_Hitung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:layout_below="@id/btn_hitung"
+            android:layout_toEndOf="@id/tvHasil"
+            android:layout_margin="10dp"/>
+
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>
